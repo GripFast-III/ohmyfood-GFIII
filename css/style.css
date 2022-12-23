@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.google.com/specimen/Roboto');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1400px;
+}
+
+h1 {
+    font-family: Shrikhand,"cursive";
+    text-align: center;
+    height: 2rem;
+    padding-top: 1%;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAEA;
+}
+
+.searchform{
+    display: flex;
+    justify-content: center;
+}
+
+.locbutton{
+    background-color: #EAEAEA;
+    border-style: solid;
+    border-color: #EAEAEA;
+}
+
+.searchbar{
+    background-color: #EAEAEA;
+    border-style: solid;
+    border-color: #EAEAEA;
+    width: 7rem;
+}
+
+.card-restaurant {
+    width: 28%;
+    border: 5px solid #FFFF;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 1px 5px -1px;
+    line-height: 1.15;
+    background-color: #FFFF;
+    margin: 1.5%;
+}
+
+.card-restaurant {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 1s;
+}
+
+.image-card-restaurant {
+    display: flex;
+    flex: 2;
+}
+
+.restaurants-photos {
+    display: flex;
+    background-color: #FFFF;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    height: 7rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.text-container-restaurant {
+    border: 5px solid #FFFF;
+    background-color: #FFFF;
+    border-radius: 0 0 20px 20px;
+}
+
+.titre-container-restaurant {
+    line-height: 25px;
+    margin-left: 2%;
+}
+
+
+footer {
+    flex-direction: column;
+    color: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #000;
+    padding-left: 1.5%;
+}
+
+footer ul{
+    list-style-type: none;
+}
+.titre-footer{
+    color: #FFF;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.lien a{
+    color:#FFF;
+    text-decoration: none;
+}
+
+.lien a:hover{
+    text-decoration: underline;
+}

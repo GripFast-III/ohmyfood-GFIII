@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood-gfiii",
+  "version": "1.0.0",
+  "description": "\"Site 100% mobile ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "no test specified"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GripFast-III/ohmyfood-GFIII.git"
+  },
+  "keywords": [
+    "ohmyfood"
+  ],
+  "author": "Jean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GripFast-III/ohmyfood-GFIII/issues"
+  },
+  "homepage": "https://github.com/GripFast-III/ohmyfood-GFIII#readme"
+}
