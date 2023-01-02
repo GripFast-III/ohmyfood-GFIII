@@ -1,0 +1,9 @@
+$colorBlue:#0065FC;
+
+.myvar{
+    color: red;
+    &_modif{
+        color:$colorBlue;
+    }
+}
+

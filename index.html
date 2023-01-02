@@ -2,22 +2,26 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="content="width=device-width, initial-scale=1.0">
     <script
       src="https://kit.fontawesome.com/76951b6d18.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css old/reset.css" />
+    <link rel="stylesheet" href="./css old/style.css" />
+    <link rel="stylesheet" href="./sass/main.scss" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.google.com/specimen/Roboto" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <title>ohmyfood</title>
   </head>
 
   <body>
+    <div class="loade"></div>
     <div class="bloc_page">
       <header class="top">
         <h1>ohmyfood</h1>
@@ -39,10 +43,12 @@
         </section>
 
         <section class="consignes">
-          <h2>Réservez le menu qui vous convient</h2>
-          <p>
-            Découvrez des restaurants d'exception, séléctionnés par nos soins
-          </p>
+          <div class="titre">
+            <h2>Réservez le menu qui vous convient</h2>
+          </div>
+          <div class="sous-titre">
+            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+          </div>
           <from class="bouton-explorer">
             <button class="searchbutton" type="submit">
               <i class="explorer">Explorer nos restaurants</i>
@@ -56,17 +62,20 @@
             <div class="etapes">
               <div class="bouton">
                 <button class="disabled-filter" type="button">
-                  <i class="fa"></i><span>Choisissez un restaurant</span>
+                  <div class="chiffre">1</div>
+                  <i class="fa-solid fa-mobile-screen-button"></i><div class="bouton-etapes">Choisissez un restaurant</div>
                 </button>
               </div>
               <div class="bouton">
                 <button class="disabled-filter" type="button">
-                  <i class="fa fa"></i><span>Composez votre menu</span>
+                  <div class="chiffre">2</div>
+                  <i class="fa-sharp fa-solid fa-list"></i><div class="bouton-etapes">Composez votre menu</div>
                 </button>
               </div>
               <div class="bouton">
                 <button class="disabled-filter" type="button">
-                  <i class="fa fa"></i><span>Dégustez au restaurant</span>
+                  <div class="chiffre">3</div>
+                  <i class="fa-solid fa-store"></i><div class="bouton-etapes">Dégustez au restaurant</div>
                 </button>
               </div>
             </div>
@@ -89,13 +98,15 @@
                       class="restaurants-photos"
                     />
                   </div>
+                  <div class="nouveau">Nouveau</div>
                   <div class="text-container-restaurant">
                     <div class="titre-container-restaurant">
                       <h3>La palette du goût</h3>
                       <p>Ménilmontant</p>
                     </div>
                     <div class="coeur-restaurant">
-                      <i class=""></i>
+                      <span class="far fa-heart unchecked" aria-hidden="true"></span>
+                      <span class="fas fa-heart checked" aria-hidden="true"></span>
                     </div>
                   </div>
                 </a>
@@ -111,13 +122,15 @@
                       class="restaurants-photos"
                     />
                   </div>
+                  <div class="nouveau">Nouveau</div>
                   <div class="text-container-restaurant">
                     <div class="titre-container-restaurant">
-                      <h3>La note enchentée</h3>
+                      <h3>La note enchantée</h3>
                       <p>Charonne</p>
                     </div>
                     <div class="coeur-restaurant">
-                      <i class=""></i>
+                      <span class="far fa-heart unchecked" aria-hidden="true"></span>
+                      <span class="fas fa-heart checked" aria-hidden="true"></span>
                     </div>
                   </div>
                 </a>
@@ -139,7 +152,8 @@
                       <p>Cité Rouge</p>
                     </div>
                     <div class="coeur-restaurant">
-                      <i class=""></i>
+                      <span class="far fa-heart unchecked" aria-hidden="true"></span>
+                      <span class="fas fa-heart checked" aria-hidden="true"></span>
                     </div>
                   </div>
                 </a>
@@ -161,7 +175,8 @@
                       <p>Folie-Méricourt</p>
                     </div>
                     <div class="coeur-restaurant">
-                      <i class=""></i>
+                      <span class="far fa-heart unchecked" aria-hidden="true"></span>
+                      <span class="fas fa-heart checked" aria-hidden="true"></span>
                     </div>
                   </div>
                 </a>
@@ -179,13 +194,13 @@
             <ul>
               <li>
                 <div class="lien">
-                  <i class=""></i>
+                  <i class="fa-solid fa-utensils"></i>
                   <a href="#">Proposer un restaurant</a>
                 </div>
               </li>
               <li>
                 <div class="lien">
-                  <i class=""></i>
+                  <i class="fa-solid fa-handshake-angle"></i>
                   <a href="#">Devenir partenaire</a>
 
                 </div>

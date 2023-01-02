@@ -4,7 +4,8 @@
   "description": "\"Site 100% mobile ohmyfood",
   "main": "index.js",
   "scripts": {
-    "test": "no test specified"
+    "test": "no test specified",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/GripFast-III/ohmyfood-GFIII/issues"
   },
-  "homepage": "https://github.com/GripFast-III/ohmyfood-GFIII#readme"
+  "homepage": "https://github.com/GripFast-III/ohmyfood-GFIII#readme",
+  "dependencies": {
+    "post-cli": "^1.0.5"
+  }
 }
