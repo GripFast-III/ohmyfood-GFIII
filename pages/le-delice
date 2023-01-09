@@ -7,9 +7,6 @@
       src="https://kit.fontawesome.com/76951b6d18.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css old/reset.css" />
-    <link rel="stylesheet" href="./css old/style.css" />
-    <link rel="stylesheet" href="./sass/main.scss" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.google.com/specimen/Roboto" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <title>À la française</title>
+    <title>Le délice des sens</title>
   </head>
 
   <body>
@@ -30,15 +27,15 @@
       <main>
         <div class="photo-restaurant">
             <img
-              src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-              alt="À la française"
-              title="À la française"
+              src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg
+              alt="Le délice des sens"
+              title="Le délice des sens"
               class="photo-restaurant"
             />
           </div>
         <section class="en-tete">
           <div class="titre">
-            <h2>À la française</h2>
+            <h2>Le délice des sens</h2>
           </div>
           <div class="coeur-principal">
             <span class="far fa-heart unchecked" aria-hidden="true"></span>
@@ -54,8 +51,8 @@
                 <div class="list-cards-entrees">
                     <div class="card-entree">
                         <div class="text-container-entree">
-                            <h4>Tartare de poulpe acidulé</h4>
-                            <p>Aux zestes d'orange</p>
+                            <h4>Tartare de thon</h4>
+                            <p>Assaisonné au yuzu</p>
                         <div class="prix">
                             <h4>25€</h4>
                         </div>
@@ -63,8 +60,8 @@
 
                     <div class="card-entree">
                         <div class="text-container-entree">
-                            <h4>Velouté de légumes d'antan</h4>
-                            <p>Carotte, panais, topinambour</p>
+                            <h4>Bouchée de homard croustillant</h4>
+                            <p>Et sa farandole de petits légumes</p>
                         <div class="prix">
                             <h4>35€</h4>
                         </div>
@@ -72,8 +69,8 @@
 
                     <div class="card-entree">
                         <div class="text-container-entree">
-                            <h4>Soupe à l'oignon</h4>
-                            <p>Revisitée</p>
+                            <h4>Velouté de cèpes</h4>
+                            <p>Aux truffes</p>
                         <div class="prix">
                             <h4>20€</h4>
                         </div>
@@ -90,8 +87,8 @@
                 <div class="list-cards-plats">
                     <div class="card-plat">
                         <div class="text-container-plat">
-                            <h4>Coquilles Saint-Jacques</h4>
-                            <p>Accompagnées d'une purée de panais</p>
+                            <h4>Poulet rôti aux herbes de Provence</h4>
+                            <p>Et sa crème de truffe</p>
                         <div class="prix">
                             <h4>40€</h4>
                         </div>
@@ -99,8 +96,8 @@
 
                     <div class="card-plat">
                         <div class="text-container-plat">
-                            <h4>Magret de canard</h4>
-                            <p>Et parmentier de pommes de terre</p>
+                            <h4>Langouste rôtie</h4>
+                            <p>Et ses légumes de saison</p>
                         <div class="prix">
                             <h4>35€</h4>
                         </div>
@@ -108,8 +105,8 @@
 
                     <div class="card-plat">
                         <div class="text-container-plat">
-                            <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-                            <p>Sur son lit de gnocchis aux légumes</p>
+                            <h4>Côte de bœuf Angus</h4>
+                            <p>Et sa purée de panais</p>
                         <div class="prix">
                             <h4>44€</h4>
                         </div>
@@ -126,8 +123,8 @@
                 <div class="list-cards-desserts">
                     <div class="card-dessert">
                         <div class="text-container-dessert">
-                            <h4>Pétales de violettes glacés</h4>
-                            <p>Et purée de noisettes</p>
+                            <h4>Farandole de desserts</h4>
+                            <p>du chef</p>
                         <div class="prix">
                             <h4>18€</h4>
                         </div>
@@ -135,8 +132,8 @@
 
                     <div class="card-dessert">
                         <div class="text-container-dessert">
-                            <h4>Fondant au chocolat</h4>
-                            <p>Revisité</p>
+                            <h4>Crème brulée</h4>
+                            <p>Revisitée</p>
                         <div class="prix">
                             <h4>22€</h4>
                         </div>
@@ -144,8 +141,8 @@
 
                     <div class="card-dessert">
                         <div class="text-container-dessert">
-                            <h4>Millefeuille croustillant</h4>
-                            <p>Myrtilles et pâte d'amande</p>
+                            <h4>Tiramisu</h4>
+                            <p>À la noisette</p>
                         <div class="prix">
                             <h4>23€</h4>
                         </div>
