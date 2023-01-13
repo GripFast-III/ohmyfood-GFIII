@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="content" width="device-width, initial-scale=1.0" />
+    <meta name="content" viewpoint="device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/76951b6d18.js"
       crossorigin="anonymous"
@@ -26,11 +26,12 @@
 
       <main>
         <section class="choice">
-          <form class="searchform" action="#">
-            <button class="locbutton" type="button">
+          <form class="searchform">
+            <label for="search" class="locbutton">
               <i class="fa fa-map-marker-alt"></i>
-            </button>
+            </label>
             <input
+              id="search"
               class="searchbar"
               type="text"
               placeholder="Paris, Belleville"
@@ -51,7 +52,7 @@
           <div class="bouton-explorer">
             <form>
               <button class="searchbutton" type="submit">
-                <i class="explorer">Explorer nos restaurants</i>
+                <span class="explorer">Explorer nos restaurants</span>
               </button>
             </form>
           </div>
@@ -59,30 +60,30 @@
 
         <section class="fonctionnement">
           <div class="section-fonctionnement">
-            <div class="fontionnement-titre">
+            <div class="fonctionnement-titre">
               <h2>Fonctionnement</h2>
-              <div class="etapes">
-                <div class="bouton">
-                  <button class="disabled-filter" type="button">
-                    <div class="chiffre">1</div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <div class="bouton-etapes">Choisissez un restaurant</div>
-                  </button>
-                </div>
-                <div class="bouton">
-                  <button class="disabled-filter" type="button">
-                    <div class="chiffre">2</div>
-                    <i class="fa-sharp fa-solid fa-list"></i>
-                    <div class="bouton-etapes">Composez votre menu</div>
-                  </button>
-                </div>
-                <div class="bouton">
-                  <button class="disabled-filter" type="button">
-                    <div class="chiffre">3</div>
-                    <i class="fa-solid fa-store"></i>
-                    <div class="bouton-etapes">Dégustez au restaurant</div>
-                  </button>
-                </div>
+            </div>
+            <div class="etapes">
+              <div class="bouton">
+                <button class="disabled-filter" type="button">
+                  <div class="chiffre">1</div>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <div class="bouton-etapes">Choisissez un restaurant</div>
+                </button>
+              </div>
+              <div class="bouton">
+                <button class="disabled-filter" type="button">
+                  <div class="chiffre">2</div>
+                  <i class="fa-sharp fa-solid fa-list"></i>
+                  <div class="bouton-etapes">Composez votre menu</div>
+                </button>
+              </div>
+              <div class="bouton">
+                <button class="disabled-filter" type="button">
+                  <div class="chiffre">3</div>
+                  <i class="fa-solid fa-store"></i>
+                  <div class="bouton-etapes">Dégustez au restaurant</div>
+                </button>
               </div>
             </div>
           </div>
@@ -105,23 +106,27 @@
                     />
                   </div>
                   <div class="nouveau">Nouveau</div>
-                  <div class="text-container-restaurant">
-                    <div class="titre-container-restaurant">
-                      <h3>La palette du goût</h3>
-                      <p>Ménilmontant</p>
-                    </div>
-                    <div class="coeur-restaurant">
-                      <span
-                        class="far fa-heart unchecked"
-                        aria-hidden="true"
-                      ></span>
-                      <span
-                        class="fas fa-heart checked"
-                        aria-hidden="true"
-                      ></span>
-                    </div>
-                  </div>
                 </a>
+                <div class="titre-et-cœur">
+                  <a class="link" href="#">
+                    <div class="text-container-restaurant">
+                      <div class="titre-container-restaurant">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="coeur-restaurant">
+                    <span
+                      class="far fa-heart unchecked"
+                      aria-hidden="true"
+                    ></span>
+                    <span
+                      class="fas fa-heart checked"
+                      aria-hidden="true"
+                    ></span>
+                  </div>
+                </div>
               </div>
 
               <div class="card-restaurant">
@@ -135,23 +140,27 @@
                     />
                   </div>
                   <div class="nouveau">Nouveau</div>
-                  <div class="text-container-restaurant">
-                    <div class="titre-container-restaurant">
-                      <h3>La note enchantée</h3>
-                      <p>Charonne</p>
-                    </div>
-                    <div class="coeur-restaurant">
-                      <span
-                        class="far fa-heart unchecked"
-                        aria-hidden="true"
-                      ></span>
-                      <span
-                        class="fas fa-heart checked"
-                        aria-hidden="true"
-                      ></span>
-                    </div>
-                  </div>
                 </a>
+                <div class="titre-et-cœur">
+                  <a class="link" href="#">
+                    <div class="text-container-restaurant">
+                      <div class="titre-container-restaurant">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="coeur-restaurant">
+                    <span
+                      class="far fa-heart unchecked"
+                      aria-hidden="true"
+                    ></span>
+                    <span
+                      class="fas fa-heart checked"
+                      aria-hidden="true"
+                    ></span>
+                  </div>
+                </div>
               </div>
 
               <div class="card-restaurant">
@@ -164,23 +173,27 @@
                       class="restaurants-photos"
                     />
                   </div>
-                  <div class="text-container-restaurant">
-                    <div class="titre-container-restaurant">
-                      <h3>À la française</h3>
-                      <p>Cité Rouge</p>
-                    </div>
-                    <div class="coeur-restaurant">
-                      <span
-                        class="far fa-heart unchecked"
-                        aria-hidden="true"
-                      ></span>
-                      <span
-                        class="fas fa-heart checked"
-                        aria-hidden="true"
-                      ></span>
-                    </div>
-                  </div>
                 </a>
+                <div class="titre-et-cœur">
+                  <a class="link" href="#">
+                    <div class="text-container-restaurant">
+                      <div class="titre-container-restaurant">
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="coeur-restaurant">
+                    <span
+                      class="far fa-heart unchecked"
+                      aria-hidden="true"
+                    ></span>
+                    <span
+                      class="fas fa-heart checked"
+                      aria-hidden="true"
+                    ></span>
+                  </div>
+                </div>
               </div>
 
               <div class="card-restaurant">
@@ -193,23 +206,27 @@
                       class="restaurants-photos"
                     />
                   </div>
-                  <div class="text-container-restaurant">
-                    <div class="titre-container-restaurant">
-                      <h3>Le délice des sens</h3>
-                      <p>Folie-Méricourt</p>
-                    </div>
-                    <div class="coeur-restaurant">
-                      <span
-                        class="far fa-heart unchecked"
-                        aria-hidden="true"
-                      ></span>
-                      <span
-                        class="fas fa-heart checked"
-                        aria-hidden="true"
-                      ></span>
-                    </div>
-                  </div>
                 </a>
+                <div class="titre-et-cœur">
+                  <a class="link" href="#">
+                    <div class="text-container-restaurant">
+                      <div class="titre-container-restaurant">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="coeur-restaurant">
+                    <span
+                      class="far fa-heart unchecked"
+                      aria-hidden="true"
+                    ></span>
+                    <span
+                      class="fas fa-heart checked"
+                      aria-hidden="true"
+                    ></span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
