@@ -544,24 +544,29 @@ footer ul{
 
 .text-container-entree, .text-container-plat, .text-container-dessert{
     margin-left: 1rem;
+    flex: 4;
 }
 
 .nom{
     line-height: 10px;
+    .p{
+        line-height: 20px;
+    }
 }
 
 .prix{
     display: flex;
     margin-right: 1rem;
-    align-items: end;
+    align-items: center;
+    justify-content: end;
+    flex: 0;
 }
 
 .box{
-    //overflow: hidden;
+    overflow: hidden;
     text-align: center;
     background: #99E2D0;
-    //width: 0px;
-    width: 50px;
+    width: 0px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -577,6 +582,12 @@ footer ul{
     transform: rotate(0deg);
 }
 
+.btn-dish:hover .box > .check {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
 .bouton-confirmer-commande{
     display: flex;
     justify-content: center;
@@ -586,3 +597,4 @@ footer ul{
 .commander{
     color:#FFF;
 }
+
