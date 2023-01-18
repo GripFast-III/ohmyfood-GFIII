@@ -448,18 +448,12 @@ footer ul {
   color: #9356DC;
 }
 
-.page-entiere {
-  background-color: #F2F2F2;
-  position: relative;
-  z-index: -9;
-}
-
 .en-tete {
   display: flex;
   justify-content: space-between;
   font-family: Shrikhand, "cursive";
   border-radius: 35px 35px 0px 0px;
-  margin-top: -60px;
+  transform: translateY(-60px);
 }
 
 .titre-restaurant {
@@ -467,12 +461,14 @@ footer ul {
   margin-left: 1rem;
 }
 
-.coeur-principal {
+.cœur {
   margin: 1rem;
 }
 
 .en-tete, .entrees, .plats, .desserts, .bouton-confirmer-commande {
   background-color: #F2F2F2;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .cadre-photo {
@@ -482,8 +478,8 @@ footer ul {
 
 .photo-restaurant {
   width: 100%;
-  position: relative;
-  z-index: -1;
+  max-height: 320px;
+  object-fit: cover;
 }
 
 .titre-underline {
@@ -509,37 +505,41 @@ footer ul {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.card-entree:hover, .card-plat:hover, .card-dessert:hover {
+  cursor: pointer;
+}
+.card-entree:hover .shrink, .card-plat:hover .shrink, .card-dessert:hover .shrink {
+  width: 100%;
+}
+.card-entree:hover .box, .card-plat:hover .box, .card-dessert:hover .box {
+  width: 20%;
+  text-align: center;
+  background: #99E2D0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+  padding-top: 30px;
+  color: #FFF;
+  border-radius: 0 20px 20px 0;
+}
+
+.shrink {
+  width: 100%;
+  display: flex;
+}
+
 .card-entrees:hover {
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 1s;
 }
 
-.text-container-entree, .text-container-plat, .text-container-dessert {
-  margin-left: 1rem;
-  flex: 4;
-}
-
-.nom {
-  line-height: 10px;
-}
-.nom .p {
-  line-height: 20px;
-}
-
-.prix {
-  display: flex;
-  margin-right: 1rem;
-  align-items: center;
-  justify-content: end;
-  flex: 0;
-}
-
 .box {
   overflow: hidden;
-  text-align: center;
-  background: #99E2D0;
-  width: 0px;
+  width: 0%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -555,10 +555,25 @@ footer ul {
   transform: rotate(0deg);
 }
 
-.btn-dish:hover .box > .check {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+.text-container-entree, .text-container-plat, .text-container-dessert {
+  margin-left: 1rem;
+  flex: 4;
+  line-height: 20px;
+}
+
+.nom {
+  line-height: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.prix {
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  justify-content: end;
+  flex: 0;
 }
 
 .bouton-confirmer-commande {
