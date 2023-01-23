@@ -19,12 +19,14 @@ body {
 
 .loader{
     cursor: wait;
+    position: fixed;
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: hsla(0,0%,100%,.9);
-    animation: loader 0s ease-in 2s;
+    animation: loader 3s ease-in;
     animation-fill-mode: forwards;
     animation-delay: 0s;
     animation-delay: 1.75s;
@@ -37,17 +39,10 @@ body {
     background: url('../images/logo/ohmyfood.png') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
 
     @keyframes loader {
-        0% {opacity:1;}
-        100% {opacity:0;}
+        0% {opacity: 1;}
+        100% {opacity: 0; width: 0%; height: 0%;}
         }
     }
-    /*@-webkit-keyframes loader {
-        to {
-            width:0;
-            height:0;
-            visibility:hidden;
-        }
-    }*/
 
 h1 {
     font-family: Shrikhand,"cursive";
@@ -660,7 +655,7 @@ footer ul{
     }
 }
 
-/* Nom commun à toutes les cartes d'entrees, plats et desserts*/
+/* Nom commun à toutes les cartes d'entrees, plats et desserts */
 .up{
     display: flex;
     justify-content: space-between;
@@ -680,7 +675,6 @@ footer ul{
         }
         .box{
             width: 20%;
-            text-align: center;
             background: $color-green;
             -webkit-box-align: center;
             -ms-flex-align: center;
@@ -688,15 +682,14 @@ footer ul{
             -webkit-transition: width 1s;
             -o-transition: width 1s;
             transition: width 1s;
-            padding-top: 30px;
             color: $color-white;
             border-radius: 0 20px 20px 0;
-            }
+        }
         .fa-check-circle{
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 100px;
+            border-radius: 50%;
             transform: rotate(-360deg);
             transition-duration: 0.5s;
         }
@@ -718,7 +711,8 @@ footer ul{
     -webkit-transition: width 1s;
     -o-transition: width 1s;
     transition: width 1s;
-    padding-top: 30px;
+    display: flex;
+    justify-content: center;
     color: $color-white;
     border-radius: 0 20px 20px 0;
     transition: all 1s;
@@ -745,15 +739,14 @@ footer ul{
     line-height: 10px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 
-    .h4{
-        overflow: hidden;
+    h4{
         text-overflow: ellipsis;
+        overflow: hidden;
     }
-    .p{
-        overflow: hidden;
+    p{
         text-overflow: ellipsis;
+        overflow: hidden;
     }
 }
 
