@@ -191,11 +191,17 @@ h2 {
   background-color: #F2F2F2;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.disabled-filter:hover {
-  cursor: pointer;
+
+.disabled-filter-3 {
+  width: 20rem;
+  height: 4rem;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f5edff;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transition: 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .chiffre {
@@ -222,6 +228,7 @@ h2 {
 
 .fa-store {
   margin-left: -1.5rem;
+  color: #7f39d3;
 }
 
 .section-offre {
@@ -353,6 +360,7 @@ footer {
   line-height: 22px;
   background-color: #000;
   padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 footer h4 {
@@ -469,7 +477,7 @@ footer ul {
   }
   .nom {
     font-size: 15px;
-    line-height: 10px;
+    line-height: 15px;
   }
   .nom .h4 {
     overflow: hidden;
@@ -650,12 +658,12 @@ footer ul {
   color: #fff;
   border-radius: 0 20px 20px 0;
 }
-.up:hover .fa-check-circle {
+.up:hover .fa-circle-check {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transform: rotate(-360deg);
+  transform: rotate(360deg);
   transition-duration: 0.5s;
 }
 
@@ -699,7 +707,7 @@ footer ul {
 
 .nom {
   font-size: 15px;
-  line-height: 10px;
+  line-height: 15px;
   white-space: nowrap;
   overflow: hidden;
 }
