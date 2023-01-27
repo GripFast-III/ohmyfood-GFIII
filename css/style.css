@@ -9,6 +9,7 @@
 body {
   box-sizing: border-box;
   min-width: 240px;
+  max-width: 1400px;
   font-family: Roboto;
   margin: 0;
   background-color: #F2F2F2;
@@ -237,6 +238,7 @@ h2 {
   flex-direction: column;
   background-color: #F2F2F2;
   width: 100%;
+  align-items: center;
 }
 
 .titre-section {
