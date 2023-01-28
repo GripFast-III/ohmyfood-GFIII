@@ -12,7 +12,7 @@
 body {
     box-sizing: border-box;
     min-width: 240px;
-    max-width: 1400px;
+
     font-family: Roboto;
     margin: 0;
     background-color: #F2F2F2;
@@ -37,7 +37,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../images/logo/ohmyfood.png') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+    background: url('../images/logo/ohmyfood-small.png') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
 
     @keyframes loader {
         0% {opacity: 1;}
@@ -139,7 +139,8 @@ h2{
 
     &:hover{
         cursor: pointer;
-        box-shadow: 0 8px 16px 0 $color-secondary;
+        background: linear-gradient(to top left, $color-primary-lighter, $color-secondary-lighter);
+        box-shadow: 0 8px 16px 0 $color-secondary-lighter;
         transition: 1s;
         transform: scale(1.02);
     }
@@ -250,6 +251,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .card-restaurant {
@@ -726,13 +728,13 @@ footer ul{
     color: $color-white;
     border-radius: 0 20px 20px 0;
     transition: all 1s;
-    .fa-check-circle{
+    .fa-circle-check{
         display: flex;
         align-items: center;
         justify-content: center;
         height: 1rem;
         border-radius: 100px;
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
         transition-duration: 2s;
     }
 }
