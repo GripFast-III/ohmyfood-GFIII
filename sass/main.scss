@@ -239,7 +239,6 @@ h2{
     flex-direction: column;
     background-color: #F2F2F2;
     width: 100%;
-    align-items: center;
 }
 
 .titre-section{
@@ -449,7 +448,7 @@ footer ul{
 }
 
                                         /*-- Version Desktop --*/
-@media all and (min-width:1081px) and (max-width:1400px)
+@media all and (min-width:1081px) and (max-width:2400px)
 {
     .etapes{
         flex-direction: row;
