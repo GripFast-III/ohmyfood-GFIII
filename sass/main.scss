@@ -160,6 +160,7 @@ h2{
 
 .fonctionnement-titre{
     width: 100%;
+    padding-top: 1rem;
 }
 
 .fonctionnement h2{
@@ -243,6 +244,7 @@ h2{
 
 .titre-section{
     margin-left: 1.5rem;
+    padding-top: 1rem;
 }
 
 .list-cards-restaurants{
@@ -457,6 +459,10 @@ footer ul{
 
     .bouton{
         margin: 3.5%;
+    }
+
+    .section-offre{
+        align-items: center;
     }
 
     .list-cards-restaurants {
